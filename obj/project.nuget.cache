@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "sOuwljGkhoH+QyJfC9crV8Sd+cRMLXjnnEYDnB5RKuryW/N0okR0VHOZ5Vhih4m4tTQyc/6QsSUyfr9AJlUThg==",
+  "success": true,
+  "projectFilePath": "E:\\Daiane\\RECODE\\Squad\\Mangut\\Mangut.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\6.0.0\\microsoft.aspnetcore.authentication.negotiate.6.0.0.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.0\\microsoft.aspnetcore.connections.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.extensions.features\\6.0.0\\microsoft.extensions.features.6.0.0.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\system.directoryservices.protocols\\6.0.0\\system.directoryservices.protocols.6.0.0.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\system.io.pipelines\\6.0.0\\system.io.pipelines.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

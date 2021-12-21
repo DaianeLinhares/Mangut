@@ -1,0 +1,20 @@
+.navbar .nav-item {
+  padding: 0 8px !important;
+}
+
+button {
+  border-radius: 3px !important;
+}
+
+.website-logo {
+  width: 100%;
+  height: 45vh;
+  background: red;
+  display: block;
+  position: relative;
+  background-image: url(../img/jungle-4822003_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
