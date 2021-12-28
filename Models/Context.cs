@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Mangut.Models;
 
 namespace Mangut.Models
 {
@@ -13,5 +14,6 @@ namespace Mangut.Models
         public DbSet<Produto> Produtos { get; set;}
         public DbSet<Compra> Compras { get; set;}
         public DbSet<Avaliacao> Avaliacaoes { get; set;}
+        public DbSet<Mangut.Models.Categoria> Categoria { get; set; }
     }
 }

@@ -6,6 +6,7 @@ namespace Mangut.Models
     {
         [Key]
         public int IdAvaliacao { get; set; }
+        public int Nota { get; set; }
         public string Mensagem { get; set; }
         public virtual List<Vendedor> Vendedor { get; set; }
     }

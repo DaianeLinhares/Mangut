@@ -15,6 +15,90 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Daiane\RECODE\Squad\Mangut
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Daiane/RECODE/Squad/Mangut/Views/Avaliacoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbGlhY29lc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Avaliacoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbGlhY29lc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Avaliacoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbGlhY29lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Avaliacoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbGlhY29lc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Avaliacoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbGlhY29lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Categorias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Categorias/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Categorias/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Categorias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Categorias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Clientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Clientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Clientes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Clientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Clientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Compras/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Compras/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Compras/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Compras/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Compras/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Home/Categorias.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yaWFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Daiane/RECODE/Squad/Mangut/Views/Home/Estatisticas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFc3RhdGlzdGljYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -35,12 +119,52 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm94aW1vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Daiane/RECODE/Squad/Mangut/Views/Produtos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Produtos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Produtos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Produtos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Produtos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Daiane/RECODE/Squad/Mangut/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Daiane/RECODE/Squad/Mangut/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Vendedores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Vendedores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Vendedores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Vendedores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Vendedores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Daiane/RECODE/Squad/Mangut/Views/_ViewImports.cshtml]

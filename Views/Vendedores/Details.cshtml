@@ -1,0 +1,54 @@
+﻿@model Mangut.Models.Vendedor
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Vendedor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CPF)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CPF)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Endereço)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Endereço)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.telefone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.telefone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.senha)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.senha)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Avaliacao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Avaliacao.IdAvaliacao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdVendedor">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

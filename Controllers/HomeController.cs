@@ -18,7 +18,11 @@ namespace Mangut.Controllers
             return View();
         }
 
-        public IActionResult Categoria()
+        public IActionResult Categorias()
+        {
+            return View();
+        }
+        public IActionResult Proximo()
         {
             return View();
         }

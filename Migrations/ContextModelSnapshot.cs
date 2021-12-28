@@ -34,9 +34,34 @@ namespace Mangut.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Nota")
+                        .HasColumnType("int");
+
                     b.HasKey("IdAvaliacao");
 
                     b.ToTable("Avaliacaoes");
+                });
+
+            modelBuilder.Entity("Mangut.Models.Categoria", b =>
+                {
+                    b.Property<int>("IdCategoria")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCategoria"), 1L, 1);
+
+                    b.Property<int?>("CategoriaIdCategoria")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdCategoria");
+
+                    b.HasIndex("CategoriaIdCategoria");
+
+                    b.ToTable("Categoria");
                 });
 
             modelBuilder.Entity("Mangut.Models.Cliente", b =>
@@ -102,6 +127,9 @@ namespace Mangut.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdProduto"), 1L, 1);
 
+                    b.Property<int>("IdCategoria")
+                        .HasColumnType("int");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -110,11 +138,12 @@ namespace Mangut.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Tipo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Quantidade")
+                        .HasColumnType("int");
 
                     b.HasKey("IdProduto");
+
+                    b.HasIndex("IdCategoria");
 
                     b.ToTable("Produtos");
                 });
@@ -158,6 +187,13 @@ namespace Mangut.Migrations
                     b.ToTable("Vendedores");
                 });
 
+            modelBuilder.Entity("Mangut.Models.Categoria", b =>
+                {
+                    b.HasOne("Mangut.Models.Categoria", null)
+                        .WithMany("Categorias")
+                        .HasForeignKey("CategoriaIdCategoria");
+                });
+
             modelBuilder.Entity("Mangut.Models.Compra", b =>
                 {
                     b.HasOne("Mangut.Models.Cliente", "Cliente")
@@ -177,6 +213,17 @@ namespace Mangut.Migrations
                     b.Navigation("Produto");
                 });
 
+            modelBuilder.Entity("Mangut.Models.Produto", b =>
+                {
+                    b.HasOne("Mangut.Models.Categoria", "Categoria")
+                        .WithMany()
+                        .HasForeignKey("IdCategoria")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Categoria");
+                });
+
             modelBuilder.Entity("Mangut.Models.Vendedor", b =>
                 {
                     b.HasOne("Mangut.Models.Avaliacao", "Avaliacao")
@@ -191,6 +238,11 @@ namespace Mangut.Migrations
             modelBuilder.Entity("Mangut.Models.Avaliacao", b =>
                 {
                     b.Navigation("Vendedor");
+                });
+
+            modelBuilder.Entity("Mangut.Models.Categoria", b =>
+                {
+                    b.Navigation("Categorias");
                 });
 
             modelBuilder.Entity("Mangut.Models.Cliente", b =>
