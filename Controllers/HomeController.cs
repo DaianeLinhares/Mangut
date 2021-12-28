@@ -1,4 +1,4 @@
-﻿using Mangut.Models;
+﻿ using Mangut.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -18,6 +18,10 @@ namespace Mangut.Controllers
             return View();
         }
 
+        public IActionResult Categoria()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

@@ -15,12 +15,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Daiane\RECODE\Squad\Mangut
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Daiane/RECODE/Squad/Mangut/Views/Home/Estatisticas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFc3RhdGlzdGljYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Home/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGQVEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Daiane/RECODE/Squad/Mangut/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Daiane/RECODE/Squad/Mangut/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Home/Proximo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm94aW1vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Daiane/RECODE/Squad/Mangut/Views/Shared/Error.cshtml]

@@ -1,10 +1,12 @@
+using Mangut.Models;
 using Microsoft.AspNetCore.Authentication.Negotiate;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddDbContext<Context>(options => options.UseSqlServer("Data Source=DESKTOP-T5PEQTR;Initial Catalog=Mangut;Integrated Security=True"));
 builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
    .AddNegotiate();
 
