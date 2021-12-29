@@ -13,20 +13,28 @@ namespace Mangut.Controllers
             _logger = logger;
         }
 
+
         public IActionResult Index()
         {
             return View();
         }
-
-        public IActionResult Categorias()
+        public IActionResult Busca()
+        {
+            return View();
+        }       
+        public IActionResult QuemSomos()
         {
             return View();
         }
-        public IActionResult Proximo()
+        public IActionResult Estatisticas()
         {
             return View();
         }
-        public IActionResult Privacy()
+        public IActionResult FAQ()
+        {
+            return View();
+        }
+        public IActionResult Cadastro()
         {
             return View();
         }
