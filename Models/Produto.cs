@@ -13,7 +13,7 @@ namespace Mangut.Models
         public string Nome { get; set;}
         public string Preco { get; set; }
         public int Quantidade { get; set; }
-
+        public virtual List<Vendedor> Vendedor { get; set; }
         public virtual List<Compra> Compras { get; set; }
         
     }

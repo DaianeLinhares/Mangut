@@ -49,37 +49,14 @@ namespace Mangut.Migrations
                     IdCliente = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    telefone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    senha = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CPF = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
+                    Telefone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Senha = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Clientes", x => x.IdCliente);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Vendedores",
-                columns: table => new
-                {
-                    IdVendedor = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CPF = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
-                    Endereço = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    telefone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IdAvaliacao = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Vendedores", x => x.IdVendedor);
-                    table.ForeignKey(
-                        name: "FK_Vendedores_Avaliacaoes_IdAvaliacao",
-                        column: x => x.IdAvaliacao,
-                        principalTable: "Avaliacaoes",
-                        principalColumn: "IdAvaliacao",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -131,6 +108,37 @@ namespace Mangut.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Vendedores",
+                columns: table => new
+                {
+                    IdVendedor = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CPF = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
+                    Endereco = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Telefone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IdProduto = table.Column<int>(type: "int", nullable: false),
+                    IdAvaliacao = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Vendedores", x => x.IdVendedor);
+                    table.ForeignKey(
+                        name: "FK_Vendedores_Avaliacaoes_IdAvaliacao",
+                        column: x => x.IdAvaliacao,
+                        principalTable: "Avaliacaoes",
+                        principalColumn: "IdAvaliacao",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Vendedores_Produtos_IdProduto",
+                        column: x => x.IdProduto,
+                        principalTable: "Produtos",
+                        principalColumn: "IdProduto",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Categoria_CategoriaIdCategoria",
                 table: "Categoria",
@@ -155,6 +163,11 @@ namespace Mangut.Migrations
                 name: "IX_Vendedores_IdAvaliacao",
                 table: "Vendedores",
                 column: "IdAvaliacao");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Vendedores_IdProduto",
+                table: "Vendedores",
+                column: "IdProduto");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -169,10 +182,10 @@ namespace Mangut.Migrations
                 name: "Clientes");
 
             migrationBuilder.DropTable(
-                name: "Produtos");
+                name: "Avaliacaoes");
 
             migrationBuilder.DropTable(
-                name: "Avaliacaoes");
+                name: "Produtos");
 
             migrationBuilder.DropTable(
                 name: "Categoria");

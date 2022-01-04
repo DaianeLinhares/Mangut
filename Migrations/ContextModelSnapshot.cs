@@ -72,19 +72,24 @@ namespace Mangut.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCliente"), 1L, 1);
 
+                    b.Property<string>("CPF")
+                        .IsRequired()
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("email")
+                    b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("senha")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("telefone")
+                    b.Property<string>("Telefone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -161,28 +166,33 @@ namespace Mangut.Migrations
                         .HasMaxLength(11)
                         .HasColumnType("nvarchar(11)");
 
-                    b.Property<string>("Endereço")
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Endereco")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IdAvaliacao")
                         .HasColumnType("int");
 
-                    b.Property<string>("email")
+                    b.Property<int>("IdProduto")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("senha")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("telefone")
+                    b.Property<string>("Telefone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdVendedor");
 
                     b.HasIndex("IdAvaliacao");
+
+                    b.HasIndex("IdProduto");
 
                     b.ToTable("Vendedores");
                 });
@@ -232,7 +242,15 @@ namespace Mangut.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Mangut.Models.Produto", "Produto")
+                        .WithMany("Vendedor")
+                        .HasForeignKey("IdProduto")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Avaliacao");
+
+                    b.Navigation("Produto");
                 });
 
             modelBuilder.Entity("Mangut.Models.Avaliacao", b =>
@@ -253,6 +271,8 @@ namespace Mangut.Migrations
             modelBuilder.Entity("Mangut.Models.Produto", b =>
                 {
                     b.Navigation("Compras");
+
+                    b.Navigation("Vendedor");
                 });
 #pragma warning restore 612, 618
         }

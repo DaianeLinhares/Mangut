@@ -9,12 +9,15 @@ namespace Mangut.Models
         [Required]
         public string Nome { get; set; }
         [Required]
-        public string telefone { get; set; }
+        [StringLength(11)]
+        public string CPF { get; set; }
         [Required]
-        public string email { get; set; }
+        public string Telefone { get; set; }
         [Required]
-        public string senha { get; set; }
+        public string Email { get; set; }
+        [Required]
+        public string Senha { get; set; }
         public virtual List<Compra> Compras { get; set; }
-        
+
     }
 }

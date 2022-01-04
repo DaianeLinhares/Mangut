@@ -95,8 +95,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Daiane/RECODE/Squad/Mangut/Views/Home/Categorias.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yaWFzLmNzaHRtbA==
+[E:/Daiane/RECODE/Squad/Mangut/Views/Home/Busca.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdXNjYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Daiane/RECODE/Squad/Mangut/Views/Home/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Daiane/RECODE/Squad/Mangut/Views/Home/Estatisticas.cshtml]
@@ -111,12 +115,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Daiane/RECODE/Squad/Mangut/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/Daiane/RECODE/Squad/Mangut/Views/Home/Proximo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm94aW1vLmNzaHRtbA==
+[E:/Daiane/RECODE/Squad/Mangut/Views/Home/QuemSomos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxRdWVtU29tb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Daiane/RECODE/Squad/Mangut/Views/Produtos/Create.cshtml]
