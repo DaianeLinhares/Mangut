@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Daiane\\RECODE\\Squad\\Mangut\\Mangut.csproj": {}
+    "D:\\Users\\Administrator\\source\\repos\\Mangut\\Mangut.csproj": {}
   },
   "projects": {
-    "E:\\Daiane\\RECODE\\Squad\\Mangut\\Mangut.csproj": {
+    "D:\\Users\\Administrator\\source\\repos\\Mangut\\Mangut.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Daiane\\RECODE\\Squad\\Mangut\\Mangut.csproj",
+        "projectUniqueName": "D:\\Users\\Administrator\\source\\repos\\Mangut\\Mangut.csproj",
         "projectName": "Mangut",
-        "projectPath": "E:\\Daiane\\RECODE\\Squad\\Mangut\\Mangut.csproj",
-        "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-        "outputPath": "E:\\Daiane\\RECODE\\Squad\\Mangut\\obj\\",
+        "projectPath": "D:\\Users\\Administrator\\source\\repos\\Mangut\\Mangut.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Administrator\\source\\repos\\Mangut\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
