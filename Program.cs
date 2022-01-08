@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<Context>(options => options.UseSqlServer("Data Source=DESKTOP-T5PEQTR;Initial Catalog=Mangut;Integrated Security=True"));
+builder.Services.AddDbContext<Context>(options => options.UseSqlServer("Data Source = squad19.database.windows.net; Initial Catalog=mangut;User Id=Daiane; Password=D?ia26ne89!"));
 builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
    .AddNegotiate();
 

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "secretStore": null,
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/squad19/databases/mangut",
+      "type": "mssql.azure",
+      "connectionId": "squad19.database.windows.net"
+    }
+  }
+}

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Mangut.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20220104200107_Mangut")]
-    partial class Mangut
+    [Migration("20220108030613_mangut")]
+    partial class mangut
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -52,16 +52,11 @@ namespace Mangut.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCategoria"), 1L, 1);
 
-                    b.Property<int?>("CategoriaIdCategoria")
-                        .HasColumnType("int");
-
                     b.Property<string>("Tipo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdCategoria");
-
-                    b.HasIndex("CategoriaIdCategoria");
 
                     b.ToTable("Categoria");
                 });
@@ -199,13 +194,6 @@ namespace Mangut.Migrations
                     b.ToTable("Vendedores");
                 });
 
-            modelBuilder.Entity("Mangut.Models.Categoria", b =>
-                {
-                    b.HasOne("Mangut.Models.Categoria", null)
-                        .WithMany("Categorias")
-                        .HasForeignKey("CategoriaIdCategoria");
-                });
-
             modelBuilder.Entity("Mangut.Models.Compra", b =>
                 {
                     b.HasOne("Mangut.Models.Cliente", "Cliente")
@@ -228,7 +216,7 @@ namespace Mangut.Migrations
             modelBuilder.Entity("Mangut.Models.Produto", b =>
                 {
                     b.HasOne("Mangut.Models.Categoria", "Categoria")
-                        .WithMany()
+                        .WithMany("Produtos")
                         .HasForeignKey("IdCategoria")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -262,7 +250,7 @@ namespace Mangut.Migrations
 
             modelBuilder.Entity("Mangut.Models.Categoria", b =>
                 {
-                    b.Navigation("Categorias");
+                    b.Navigation("Produtos");
                 });
 
             modelBuilder.Entity("Mangut.Models.Cliente", b =>

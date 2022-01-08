@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Mangut.Migrations
 {
-    public partial class Mangut : Migration
+    public partial class mangut : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -29,17 +29,11 @@ namespace Mangut.Migrations
                 {
                     IdCategoria = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CategoriaIdCategoria = table.Column<int>(type: "int", nullable: true)
+                    Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Categoria", x => x.IdCategoria);
-                    table.ForeignKey(
-                        name: "FK_Categoria_Categoria_CategoriaIdCategoria",
-                        column: x => x.CategoriaIdCategoria,
-                        principalTable: "Categoria",
-                        principalColumn: "IdCategoria");
                 });
 
             migrationBuilder.CreateTable(
@@ -138,11 +132,6 @@ namespace Mangut.Migrations
                         principalColumn: "IdProduto",
                         onDelete: ReferentialAction.Cascade);
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Categoria_CategoriaIdCategoria",
-                table: "Categoria",
-                column: "CategoriaIdCategoria");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Compras_IdCliente",

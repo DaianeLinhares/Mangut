@@ -7,6 +7,6 @@ namespace Mangut.Models
         [Key]
         public int IdCategoria { get; set; }
         public string Tipo { get; set; }
-        public List<Categoria> Categorias { get; set; }
+        public List<Produto> Produtos { get; set; }
     }
 }
